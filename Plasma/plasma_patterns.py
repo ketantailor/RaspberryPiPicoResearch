@@ -190,17 +190,10 @@ def sparkle_warm_white(duration=30, blinks_per_sec=5):
         time.sleep(1 / blinks_per_sec)
 
 
-duration = 30
+duration = 300
 blinks_per_sec = 1
 led_strip.start(FPS)
 fns = [
-    # lambda: set_all_rgb(0, 0, 128),
-    # lambda: set_all_rgb(0, 128, 0),
-    # lambda: set_all_rgb(0, 128, 128),
-    # lambda: set_all_rgb(128, 0, 0),
-    # lambda: set_all_rgb(128, 0, 128),
-    # lambda: set_all_rgb(128, 128, 0),
-    # lambda: set_all_rgb(128, 128, 128),
     lambda: rainbow_range(duration),
     lambda: rainbow_fade(duration),
     lambda: rainbow_range(duration),
